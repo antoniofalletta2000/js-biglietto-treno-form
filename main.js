@@ -13,11 +13,14 @@ let buttonStop = document.querySelector(".btn_stop")
 /* console.log(buttonStop); */
 let totalPrice = document.getElementById("total")
 
+let nameTicket= document.getElementById("name_ticket")
+
 
 formEl.addEventListener("submit", (event) => {
     event.preventDefault()
     console.log(nameSurname.value);
     console.log(kilometers.value)
+    nameTicket.innerHTML=nameSurname.value
     let discount = 0
     let kmValue = parseInt(kilometers.value)
     let price = (kmValue * 0.21)
@@ -37,6 +40,7 @@ buttonStop.addEventListener("click", (event) => {
     event.preventDefault()
     nameSurname.value=" "
     kilometers.value=" "
+    nameTicket.innerHTML="xxxxx xxxxx"
     totalPrice.innerHTML="0000"
     console.log(totalPrice);
     
