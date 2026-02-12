@@ -9,22 +9,24 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 
-<body>
+<body class="bg-success">
 
-
-    <div class="container d-flex justify-content-center align-items-center pt-4">
-        <input type="text" id="nome_cognome" value="Jon Snow">
-        <input type="text" id="km" value="10">
-        <select id="age">
-            <option value="1">Maggiorenne</option>
-            <option value="2">Minorenne</option>
-        </select>
-    </div>
-    <div class="container d-flex justify-content-center pt-5 gap-3">
-        <button type="submit" class="btn_generate">Genera</button>
-        <button class="btn_stop">Annulla</button>
-    </div>
-
+    <form action="">
+        <div class="container d-flex justify-content-center align-items-center pt-4">
+            <input type="text" id="nome_cognome">
+            <input type="text" id="km">
+            <select id="age">
+                <option value="minor">Minorenne</option>
+                <option value="major">Maggiorenne</option>
+                <option value="over65">over-65</option>
+            </select>
+            <div id="total">0000</div>
+        </div>
+        <div class="container d-flex justify-content-center pt-5 gap-3">
+            <button type="submit" class="btn_generate">Genera</button>
+            <button type="reset" class="btn_stop">Annulla</button>
+        </div>
+    </form>
 
 
     <script src="./main.js"></script>
