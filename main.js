@@ -1,0 +1,10 @@
+const nameSurname= document.getElementById("nome_cognome")
+/* console.log(nameSurname); */
+const Kilometers= document.getElementById("km")
+/* console.log(Kilometers); */
+const ageEl= document.getElementById("age")
+/* console.log(ageEl); */
+const buttonGen= document.querySelector(".btn_generate")
+/* console.log(buttonGen); */
+const buttonStop= document.querySelector(".btn_stop")
+/* console.log(buttonStop); */
